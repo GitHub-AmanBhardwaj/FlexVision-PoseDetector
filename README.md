@@ -1,5 +1,5 @@
 # FlexVision 🌟  
-**Real-Time Human Pose Estimation and Custom Pose Classification**
+**Real-Time Human Pose Estimatior and Custom Pose Classifier**
 
 FlexVision is an interactive web-based application that combines computer vision and machine learning to estimate and classify human poses in real-time. Built using **Mediapipe**, **Flask**, and **OpenCV**, it empowers users to monitor movements, ensure correct posture, and even create custom pose models for specific applications.
 
