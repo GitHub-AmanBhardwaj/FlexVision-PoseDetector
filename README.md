@@ -35,18 +35,10 @@ Easily store your own poses via the **Add Pose** feature, creating a personalize
 ---
 
 ## Screenshots 📸
-
+--
 ![Alt Text](screenshots/h1.png)
-<br/>
 ![Alt Text](screenshots/h2.png)
-<br/>
 ![Alt Text](screenshots/a1.png)
-<br/>
 ![Alt Text](screenshots/a2.png)
-<br/>
 ![Alt Text](screenshots/d1.png)
-<br/>
 ![Alt Text](screenshots/d2.png)
-
-
-
