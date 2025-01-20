@@ -45,7 +45,8 @@ pip install -r requirements.txt
 ---
 
 # Note:
-## Add poses of your choice to create a pickle file before starting 'Detection'.
+### Add poses of your choice to create a pickle file before starting 'Detection'
+### To check stored poses refer to check_pose.py
 
 ---
 
