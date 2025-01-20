@@ -34,6 +34,14 @@ Easily store your own poses via the **Add Pose** feature, creating a personalize
 
 ---
 
+## Requirements
+
+To run this project, you need to install the required dependencies. You can install them using `pip` by running the following command:
+
+```bash pip install -r requirements.txt
+
+---
+
 # Note:
 ## Add poses of your choice to create a pickle file before starting 'Detection'.
 
