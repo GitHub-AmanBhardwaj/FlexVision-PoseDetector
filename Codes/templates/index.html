@@ -1,0 +1,55 @@
+{% extends 'base.html' %} 
+{% block title %}Home{% endblock title %} 
+{% block body %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" style="width: 80vw; margin: 50px auto;">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="static/c1.png" class="d-block w-100" alt="Slide 1" style="border-radius: 10px;" loading="lazy">
+      <div class="carousel-caption">
+        <h1 style="font-family:'Great Vibes'; font-size: 60px;">Welcome to <my>FlexVision...</my></h1>
+        <hr style="width: 70%; margin-top: 0; margin-bottom: 10px;">
+        <p>An AI based Human Pose Detector</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="static/c2.png" class="d-block w-100" alt="Slide 2" style="border-radius: 10px;" loading="lazy">
+      <div class="carousel-caption">
+        <h2>Unleash the Power of <my style="font-size: 90px;"><b>&nbsp;AI&nbsp;</b></my> to Track Every Move!</h2>
+        <hr style="width: 70%; margin-top: 0; margin-bottom: 10px;">
+        <p>An AI-driven model that captures and analyzes your pose with unmatched accuracy.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="static/c3.png" class="d-block w-100" alt="Slide 3" style="border-radius: 10px;" loading="lazy">
+      <div class="carousel-caption">
+        <h2>Enhance Your <my style="font-size: 70px;"><b>&nbsp;Fitness&nbsp;</b></my> Journey!</h2>
+        <hr style="width: 70%; margin-top: 0; margin-bottom: 10px;">
+        <p>Track your movements, improve your workouts, and reach your fitness goals faster.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div style="display:grid; place-items: center; margin-top: 60px; gap: 50px;">
+  <a href="/live">
+      <div class="card custom-shadow text-bg-dark" style="width: 55vw; height: 30vw; border-radius: 20px;">
+          <img src="static/t1.png" class="card-img" alt="Card image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+          <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(10deg, rgba(0, 19, 82, 0.5), rgba(0, 0, 0, 0)); border-radius: 20px; padding: 20px;">
+              <h5 class="card-title">Try <my><b>Live</b></my></h5>
+              <p class="card-text">Perform Real Time pose estimation with Confidence Score Feedback.</p>
+              <p class="card-text"><small>Click to visit &gt;</small></p>
+          </div>
+      </div>
+  </a>
+  <a href="/add">
+      <div class="card custom-shadow text-bg-dark" style="width: 55vw; height: 30vw; border-radius: 20px;">
+          <img src="static/t2.png" class="card-img" alt="Card image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+          <div class="card-img-overlay d-flex flex-column justify-content-end" style="background: linear-gradient(10deg, rgba(0, 19, 82, 0.5), rgba(0, 0, 0, 0)); border-radius: 20px; padding: 20px;">
+              <h5 class="card-title">Add <my><b>Poses</b></my></h5>
+              <p class="card-text">Add Custom Poses of your choice and train the model.</p>
+              <p class="card-text"><small>Click to visit &gt;</small></p>
+          </div>
+      </div>
+  </a>
+</div>
+{% endblock body %}

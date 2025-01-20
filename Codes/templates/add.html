@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Add Pose{% endblock title %}
+{% block body %}
+<a href="#CONT">
+  <div class="card custom-shadow text-bg-dark" style="align-self: center; width: 60vw; margin: auto; margin-top: 40px; border-radius: 20px;">
+    <img src="static/add.png" class="card-img">
+    <div class="card-img-overlay" style="display: grid; place-items: center;">
+      <h1 class="card-title" style="font-size: 40px;">Add A <my style="font-size: 60px;">Custom</my> Pose</h1>
+    </div>
+  </div>
+</a>
+<div id="CONT"></div>
+<hr style="border: 1px solid black; width: 62vw; justify-self: center; margin-top: 70px; margin-bottom: 50px;">
+<div class="text-center">
+  <h1 class="mb-4">Enter Pose Name and Click Start:</h1>
+  <form action="/add" method="post">
+    <div style="margin: auto 20vw;">
+        <input type="text" id="poseName" name="poseName" placeholder="Enter Pose Name Here..." class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-outline-light shadow-lg btn-lg mt-4">Start</button>
+  </form>
+  <p style="margin-top: 20px;">Press 'c' to Capture | Press 'q' to Exit Window</p>
+</div>
+<hr style="border: 1px solid black; width: 62vw; justify-self: center; margin-top: 40px; margin-bottom: 100px;">    
+{% endblock body %}

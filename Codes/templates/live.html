@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Live Estimation{% endblock title %}
+{% block body %}
+<a href="#CONT">
+  <div class="card custom-shadow text-bg-dark" style="align-self: center; width: 60vw; margin: auto; margin-top: 40px; border-radius: 20px;">
+    <img src="static/live.png" class="card-img">
+    <div class="card-img-overlay" style="display: grid; place-items: center;">
+      <h1 class="card-title" style="font-size: 40px;">Experience <my style="font-size: 60px;">Live</my> Pose Estimation</h1>
+    </div>
+  </div>
+</a>
+<div id="CONT"></div>
+<hr style="border: 1px solid black; width: 62vw; justify-self: center; margin-top: 70px; margin-bottom: 50px;">
+<div class="text-center">
+  <h1 class="mb-4">Click Below to Start:</h1>
+  <form action="/live" method="post">
+      <button type="submit" class="btn btn-outline-light shadow-lg btn-lg">Start</button>
+  </form>
+  <p style="margin-top: 20px;">Press 'q' to exit Window</p>
+</div>
+<hr style="border: 1px solid black; width: 62vw; justify-self: center; margin-top: 40px; margin-bottom: 100px;">    
+{% endblock body %}

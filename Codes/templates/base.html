@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %} </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+        body{
+            background: linear-gradient(to right , #000428, #5c7fb0, #004e92);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat';
+        }
+        hr {
+            border: 1px solid rgb(255, 255, 255);
+            width: 90vw;
+            margin: 80px auto;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .shadow-navbar {
+            width: 100%;
+            padding: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to right, #000428, #5c7fb0, #004e92);
+        }
+        .custom-shadow {
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+        .custom-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+        }
+        .cont-about{
+            width: 80vw;
+            margin: 50px auto;
+            font-family: "Montserrat", serif;
+            background: linear-gradient(to right, #004e92, #5c7fb0, #000428);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer-logo {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+        .footer-logo:hover{
+            transform: translateY(-2px) translateX(-2px);
+            box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        my {
+            background: linear-gradient(90deg, #9900ff, #00c8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Montserrat';
+            font-style: italic;
+        }    
+    </style>
+
+    <nav class="sticky-top shadow-navbar">
+      <div style="display: flex; align-items: center;">
+          <img src="static/logo.png" alt="logo" width="45" style="margin: auto 5px">
+          <a href="/" style="margin-left: 5px; font-size: 20px; color: rgb(160, 207, 255);">FlexVision &nbsp;|</a>
+          <ul style="display: flex; list-style: none; margin:auto 10px; align-items: center; gap: 15px; padding: 0;">
+              <li><a href="/">Home</a></li>
+              <li><a href="/links">Links</a></li>
+              <li><a href="/about">About</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    {% block body %}
+    {% endblock body %}
+    
+    <hr>
+    <div style="display: flex; justify-content: center; align-items: center; margin: 50px 0;">
+      <img src="static/img.png" alt="logo" width="70" height="70" class="footer-logo">
+      <p style="margin-top: 12px;">&nbsp; <b>|</b> Created by <b><i>Aman Bhardwaj</i></b></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

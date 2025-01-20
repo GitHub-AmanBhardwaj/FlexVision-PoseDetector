@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %} 
+{% block body %}
+    <div class="cont-about">
+        <h1>About FlexVision</h1>
+        <p>
+            FlexVision is a cutting-edge platform that leverages state-of-the-art machine learning techniques for real-time human pose estimation. Our goal is to bridge the gap between advanced computer vision technology and practical applications, enabling developers, researchers, and businesses to create innovative solutions.
+        </p>
+        <br>
+        <h2>What is Pose Estimation?</h2>
+        <p>
+            Pose estimation is a computer vision technique that identifies and tracks key points on the human body in images or videos. These key points, such as joints like the shoulders, elbows, knees, and ankles, are detected and connected to form a skeleton-like representation. Using this structure, we can analyze human motion and posture for a variety of practical uses.
+        </p>
+        <br>
+        <h2>How Does FlexVision Work?</h2>
+        <p>
+            FlexVision combines two powerful technologies to offer robust pose detection:
+        </p>
+        <ul>
+            <li><strong>MediaPipe</strong>: An open-source framework developed by Google, MediaPipe provides real-time, accurate pose detection by using machine learning models. It efficiently tracks key points on the body, even in dynamic settings.</li>
+            <li><strong>K-Nearest Neighbors (KNN)</strong>: After pose key points are detected, FlexVision uses KNN to classify and recognize various poses based on previously learned data. KNN is a simple yet effective machine learning algorithm that classifies poses by comparing them to the most similar poses in a dataset.</li>
+        </ul>
+        <br>
+        <h2>Applications of FlexVision</h2>
+        <p>
+            FlexVision’s advanced pose estimation technology can be applied to numerous fields, such as:
+        </p>
+        <ul>
+            <li><strong>Fitness and Sports:</strong> Analyze and improve workout techniques, track athletic performance, and help prevent injuries by identifying incorrect movements.</li>
+            <li><strong>Healthcare:</strong> Assist physical therapy by tracking exercises, detect movement disorders, and monitor patient rehabilitation.</li>
+            <li><strong>Gaming and Animation:</strong> Enhance gaming experiences with realistic character animation and control, as well as improve virtual reality interactions.</li>
+            <li><strong>Human-Computer Interaction:</strong> Enable gesture recognition and control, supporting touchless interactions in both commercial and personal applications.</li>
+            <li><strong>Surveillance:</strong> Analyze behavior patterns for security applications, providing valuable insights into crowd behavior or identifying suspicious activities.</li>
+        </ul>
+        <br>
+        <h2>Why Choose FlexVision?</h2>
+        <p>
+            FlexVision stands out for its combination of two powerful technologies: MediaPipe for pose tracking and KNN for pose classification. Our platform is designed for real-time performance, scalability, and ease of integration, offering a seamless experience for developers, researchers, and businesses alike. Whether you're looking to incorporate pose estimation into your application or exploring machine learning capabilities, FlexVision provides a reliable and efficient solution.
+        </p>
+        <br>
+        <h2>Get in Touch</h2>
+        <p>
+            <a href="/links">Click to visit the Link Section</a>
+        </p>
+    </div>
+{% endblock body %}
