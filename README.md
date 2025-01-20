@@ -34,6 +34,11 @@ Easily store your own poses via the **Add Pose** feature, creating a personalize
 
 ---
 
+# Note:
+## Add poses of your choice to create a pickle file before starting 'Detection'.
+
+---
+
 ## Screenshots 📸
 <br>
 
